@@ -14,3 +14,5 @@ class Solution:
 
 
         return(list(dict.values()))
+    
+        # time complexity O(mn) m = len(strs) and  n = len(str[i])
