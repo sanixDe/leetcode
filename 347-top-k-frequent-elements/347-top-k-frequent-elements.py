@@ -1,18 +1,7 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        dict = {}
-
-        for i in nums:
-            if i in dict:
-                dict[i] += 1
-            else:
-                dict[i] = 1
-        res = []
-        for w in sorted(dict, key=dict.get, reverse=True):
-            if k > 0:
-                res.append(w)
-
-            else:
-                break
-            k -= 1
-        return(res)
+        bucket = [[] for _ in range(len(nums) + 1)]
+        Count = Counter(nums).items()  
+        for num, freq in Count: bucket[freq].append(num) 
+        flat_list = [item for sublist in bucket for item in sublist]
+        return flat_list[::-1][:k]
