@@ -22,3 +22,8 @@ class Solution:
                     r -= 1
         
         return res
+    
+    #                   sorting     two loops  
+    # time complexity = O(nlog(n)) + O(n^2) = O(n^2)
+    
+    # space complexity = unless the sorting function is not using any space then it's O(n)
