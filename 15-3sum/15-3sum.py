@@ -10,13 +10,13 @@ class Solution:
             l, r = i+1, len(nums)-1
             
             while l<r:
-                
-                if n + nums[l] + nums[r] == 0:
+                total_sum = n + nums[l] + nums[r]
+                if total_sum == 0:
                     res.append([n,nums[l],nums[r]])
                     l += 1
                     while nums[l]==nums[l-1] and l<r:
                         l += 1
-                elif n + nums[l] + nums[r] < 0:
+                elif total_sum < 0:
                     l += 1
                 else:
                     r -= 1
