@@ -1,8 +1,6 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         max_len = 0
-        if len(s) < 2:
-            return len(s)
         sett = set()
         start = 0
         for i in range(len(s)):
@@ -19,18 +17,8 @@ class Solution:
         
     
     '''
-    a b c a b c b b
-    s e
-    
-    dict = {}
-    
-    
-    
-    
-    
-    
-    
-    
+    Time complexity = O(N) 
+    Space complexity = O(N)
     
     
     '''
