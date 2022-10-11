@@ -14,3 +14,8 @@ class Solution:
             res = max(res, r-l+1)
             
         return res
+    
+        '''
+                Time Complexity = O(26 * N) 26 for the freq hashmap
+                Space Complexity = O(1) Because we are using constant hashmap
+        '''
