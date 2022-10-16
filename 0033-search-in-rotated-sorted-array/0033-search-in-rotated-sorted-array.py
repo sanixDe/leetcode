@@ -1,6 +1,33 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        for i in range(len(nums)):
-            if nums[i] == target:
-                return i
+        
+        
+        l = 0
+        r = len(nums)-1
+        
+        while l <= r:
+            mid = (l + r) // 2
+            
+            if nums[mid] == target:
+                return mid
+            
+            # if the left side of the mid is sorted then 
+            
+            if nums[mid] >= nums[l]:
+                
+                if target > nums[mid] or target < nums[l]:
+                    
+                    l = mid+1
+                    
+                else:
+                    r =  mid-1
+            
+            # if the right side is the sorted then
+            elif nums[mid] < nums[l]:
+                if target > nums[r] or target < nums[mid]:
+                    r = mid-1
+                else:
+                    l = mid+1
+                
+                
         return -1
