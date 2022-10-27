@@ -8,20 +8,18 @@ class Solution:
         # first let's find the len of the list
         
         cur = head
-        l = 0
-        while cur:
-            cur = cur.next
-            l += 1
-        # print(l-n)
         
-        if l == n:
+        for i in range(n):
+            cur = cur.next
+        
+        if cur == None:
             return head.next
-        # b = 0
-        cur = head
-        for i in range(0, (l-n-1)):
+        nodeBefore = head
+        while cur.next:
             cur = cur.next
+            nodeBefore = nodeBefore.next
         
-        cur.next = cur.next.next
+        nodeBefore.next = nodeBefore.next.next
         
         return head
         
