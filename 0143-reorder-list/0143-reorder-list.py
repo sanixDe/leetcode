@@ -36,7 +36,7 @@ class Solution:
             cur.next = pre
             pre = cur
             cur = temp
-            
+            # pre, cur, cur.next  = cur,cur.next,pre 
             # pre, cur, cur.next = pre, cur.next, cur
             
         # Step 3 merging the linkedlist
