@@ -22,4 +22,9 @@ class Solution:
         nodeBefore.next = nodeBefore.next.next
         
         return head
+    
+    '''
+    Time complexity = O(N) since we are only using one loop
+    Space Complexity = O(1)
+    '''
         
