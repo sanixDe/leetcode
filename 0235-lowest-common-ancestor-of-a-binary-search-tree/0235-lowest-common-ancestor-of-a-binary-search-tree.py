@@ -20,3 +20,10 @@ class Solution:
         else:
             return root
 
+''' 
+Time Complexity = O(N) worst case vising all the nodes
+
+Space Complexity = O(N) using recursion stack
+
+
+'''
