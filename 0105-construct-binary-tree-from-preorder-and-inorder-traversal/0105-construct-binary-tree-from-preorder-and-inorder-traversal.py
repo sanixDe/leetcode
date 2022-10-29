@@ -31,3 +31,8 @@ class Solution:
             dict[inorder[i]] = i
         return helper(0, len(preorder)-1)
         
+        '''
+        Time complexity = O(N)
+        Space Complexity = O(N) Hashmap and system stack used by recursion calls
+        
+        '''
