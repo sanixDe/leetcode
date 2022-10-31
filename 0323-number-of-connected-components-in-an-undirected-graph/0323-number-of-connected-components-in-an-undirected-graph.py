@@ -17,10 +17,10 @@ class Solution:
             
             for x in adj[node]:
                 dfs(x)
+          
         
-    
-
-            
+        
+        
         ans = 0
         for i in range(n):
             if i not in visited:
@@ -30,3 +30,9 @@ class Solution:
         
         return ans
         
+        
+        '''
+        Time complexity = O(N + V) Since we are travesing through every node and edge
+        Space Complexity = O(2N) Because we are using a dictionary and set
+        
+        '''
