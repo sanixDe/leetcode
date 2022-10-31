@@ -1,12 +1,10 @@
 class Solution:
     def countComponents(self, n: int, edges: List[List[int]]) -> int:
         
-        # Adjecency list
         adj = {i:[] for i in range(n)}
         for i in edges:
             adj[i[0]].append(i[1])
             adj[i[1]].append(i[0])
-        print(adj)
         visited = set()
         
         def dfs(node):
@@ -19,8 +17,6 @@ class Solution:
                 dfs(x)
           
         
-        
-        
         ans = 0
         for i in range(n):
             if i not in visited:
@@ -32,7 +28,6 @@ class Solution:
         
         
         '''
-        Time complexity = O(N + V) Since we are travesing through every node and edge
-        Space Complexity = O(2N) Because we are using a dictionary and set
-        
+        Time complexity = O(N + V) Since we are traversing through every node and edge
+        Space Complexity = O(N)        
         '''
