@@ -32,3 +32,10 @@ class Solution:
                     board[i][j] = 'O'
                 else:
                     board[i][j] = 'X'
+                    
+                    
+        '''
+        Time Complexity = O(M x N) Worst case visiting all the element
+        Space Complexity = O(1)
+        
+        '''
