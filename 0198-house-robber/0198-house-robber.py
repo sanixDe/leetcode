@@ -9,3 +9,10 @@ class Solution:
         # print(dp[-1])
         return(dp[-1])
         
+        
+        '''
+        Time Complexity = O(N) -> We are iterating through an array
+        Space Complexity = O(N) -> We are using a dp array
+        
+        
+        '''
