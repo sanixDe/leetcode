@@ -17,4 +17,5 @@ class Solution:
             else:
                 l += 1
         return max_water
-            
+        
+        # time complexity = O(N)
