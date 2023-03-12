@@ -9,7 +9,6 @@ class Solution:
         while l < r:
             
             temp = min(height[l], height[r])*(r-l)
-            print(temp, height[l], height[r])
             if temp > max_water:
                 max_water = temp
             
