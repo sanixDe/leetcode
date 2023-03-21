@@ -15,3 +15,5 @@ class Solution:
             max_len = max(max_len, len(s[l:r+1]) )
             # print(max_len)
         return max_len
+    
+    # time complexity O(N)
