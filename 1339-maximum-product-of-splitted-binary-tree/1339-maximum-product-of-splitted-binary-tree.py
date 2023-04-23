@@ -24,4 +24,6 @@ class Solution:
         self.max_sum = 0
         dfs(root)
         return self.max_sum % (10**9 + 7)
-            
+    
+# time complexity = O(N)
+# space complexity = O(1)
